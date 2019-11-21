@@ -1,0 +1,26 @@
+{
+    "name": "rspec-snippets-vscode",
+    "displayName": "RSpec Snippets for VS Code",
+    "description": "RSpec Snippets generator for Visual Studio Code",
+    "version": "1.0.0",
+    "icon": "rspec.png",
+    "publisher": "ldrner",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/ldrner/rspec-snippets-vscode.git"
+	},
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "ruby",
+                "path": "./snippets/ruby_rspec.json"
+            }
+        ]
+    }
+}
