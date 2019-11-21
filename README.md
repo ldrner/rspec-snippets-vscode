@@ -35,7 +35,7 @@ This extension for Visual Studio Code adds [RSpec](http://rspec.info/) snippets 
 | Snippet              | Purpose                                             |
 | -------------------- | --------------------------------------------------- |
 | `expbe`              | expect(obj).to be                                   |
-| `expbpm`             | expect(obj).to be_(truthy|falsey etc.)              |
+| `expbpm`             | expect(obj).to be_(truthy,falsey,nil)               |
 | `expeq`              | expect(obj).to eq(other)                            |
 | `expeql`             | expect(obj).to eql(other)                           |
 | `expequal`           | expect(obj).to equal(other)                         |
