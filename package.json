@@ -2,7 +2,7 @@
     "name": "rspec-snippets-vscode",
     "displayName": "RSpec Snippets for VS Code",
     "description": "RSpec Snippets generator for Visual Studio Code",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon": "rspec.png",
     "publisher": "ldrner",
     "engines": {
@@ -22,5 +22,9 @@
                 "path": "./snippets/ruby_rspec.json"
             }
         ]
-    }
+    },
+    "keywords": [
+        "Ruby on Rails",
+        "Rspec"
+    ]
 }
