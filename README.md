@@ -1,65 +1,69 @@
-# rspec-snippets-vscode README
+# RSpec Snippets for Visual Studio Code
 
-This is the README for your extension "rspec-snippets-vscode". After writing up a brief description, we recommend including the following sections.
+This extension for Visual Studio Code adds [RSpec](http://rspec.info/) snippets for Ruby.
 
 ## Features
+- Contain snippets for the most common cases
+- Snippets contain RSpec tips
+- To be continued...
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+## Usage
 
-For example if there is an image subfolder under your extension project workspace:
+### Base Snippets
 
-\!\[feature X\]\(images/feature-x.png\)
+| Snippet              | Purpose                                             |
+| -------------------- | ----------------------------------------------------|
+| `rspec`              | RSpec spec skeleton                                 |
+| `des`                | describe                                            |
+| `con`                | context                                             |
+| `let`                | let                                                 |
+| `letb`               | let!                                                |
+| `it`                 | it                                                  |
+| `pending`            | pending                                             |
+| `sharex`             | shared_examples declaration                         |
+| `itbl`               | it_behaves_like                                     |
+| `expdo`              | expect multiline                                    |
+| `exp`                | expect                                              |
+| `expto`              | expect with block                                   |
+| `itie`               | is_expected                                         |
+| `subject`            | subject                                             |
+| `subjectcls`         | subject(:subject) { described_class.new }           |
+| `allrec`             | method stub                                         |
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### Matcher Snippets
 
-## Requirements
+| Snippet              | Purpose                                             |
+| -------------------- | --------------------------------------------------- |
+| `expbe`              | expect(obj).to be                                   |
+| `expbpm`             | expect(obj).to be_(truthy|falsey etc.)              |
+| `expeq`              | expect(obj).to eq(other)                            |
+| `expeql`             | expect(obj).to eql(other)                           |
+| `expequal`           | expect(obj).to equal(other)                         |
+| `expall`             | expect(arr).to all( matcher )                       |
+| `expinclude`         | expect(obj).to include(el)                          |
+| `expmatch`           | expect(obj).to match(patt)                          |
+| `expcte`             | expect(obj).to contain_exactly(els)                 |
+| `expexist`           | expect(obj).to exist                                |
+| `expenw`             | expect(obj).to end_with(el)                         |
+| `expstw`             | expect(obj).to start_with(el)                       |
+| `exphat`             | expect(obj).to have_attributes(hash)                |
+| `expsat`             | expect(10).to satisfy { expression }                |
+| `expbko`             | expect(obj).to be_a_kind_of(type)                   |
+| `expbio`             | expect(obj).to be_an_instance_of(type)              |
+| `exprt`              | expect(obj).to respond_to(:foo)                     |
+| `exprecw`            | expect(obj).to receive(msg).with(args)              |
+| `expraise`           | expect { raise StandardError }.to raise_error       |
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### Hooks Snippets
 
-## Extension Settings
+| Snippet              | Purpose                                             |
+| -------------------- | --------------------------------------------------- |
+| `befa`               | before(:all, :each, :suite, :context, :example)     |
+| `aft`                | after(:all, :each, :suite, :context, :example)      |
+| `aro`                | around(:example)                                    |
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## Credits
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+Thanks to contributors of the https://github.com/SublimeText/RSpec repo for some RSpec snippets:
+- [Tim Zeitz](https://github.com/tim3z)
+- [Dimitar Dimitrov](https://github.com/mitio)
